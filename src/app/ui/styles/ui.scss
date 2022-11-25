@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(./../assets/fonts/lato/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: local("Lato"), url(./../assets/fonts/open-sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
+}
+
+.text-small {
+  font-family: 'Open-Sans';
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: normal;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'case' on, 'zero' on, 'ss01' on;
+}
+.text-tiny {
+  font-family: 'Open-Sans';
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 300;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'case' on, 'zero' on, 'ss01' on;
+}
+
+
