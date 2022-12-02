@@ -1,0 +1,28 @@
+<div class="navigator" [ngClass]="isClosed ? 'close': ''">
+  <div class="logo-details">
+    <i class="bx bxl-c-plus-plus logo_icon"></i>
+    <span class="logo_name">CodingLab</span>
+    <i class="bx bx-menu expand_icon" (click)="isClosed = !isClosed"></i>
+    
+  </div>
+  <ul class="nav-links">
+    
+    <ng-template ngFor let-item [ngForOf]="items" let-i="index">
+      <app-navigator-item [isMenuItemOpened]="false" [item]="item"></app-navigator-item>
+    </ng-template>
+   
+    
+    <li>
+      <div class="profile-details">
+        <div class="profile-content">
+          <img src="https://avatars.githubusercontent.com/u/6890336?v=4" alt="profileImg">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">Sanjin Dumančić </div>
+          <div class="job">Programer</div>
+        </div>
+        <i class="bx bx-log-out"></i>
+      </div>
+    </li>
+  </ul>
+</div>

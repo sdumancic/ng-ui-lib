@@ -77,7 +77,7 @@
   }
   .content {
     padding: 43px 0 43px 0;
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 164px);
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(80px, 1fr) minmax(auto, 985px) minmax(80px, 1fr);
@@ -89,6 +89,7 @@
   .main {
     display: grid;
     grid-template-columns: minmax(auto, 1fr) 369px;
+    
 
  }
   .sidebar {
@@ -100,14 +101,16 @@
     overflow: auto;
   }
   ::ng-deep .footer {
+    grid-column-start: 1;
+    grid-column-end:3;
     padding: 12px 80px;
     min-height: initial;
     height: 64px;
     box-sizing: border-box;
     bottom: 0;
-    position: fixed;
+    //position: fixed;
     width: 100%;
-    left: 0;
+    //left: 0;
     background-color:  #ffffff;
     &__wrapper {
       display: flex;

@@ -1,2 +1,22 @@
-@use '@angular/material' as mat;
-@import './ui/styles/ui.scss';
+@use "@angular/material" as mat;
+@import "./ui/styles/ui.scss";
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+.app-container {
+  display: flex;
+}
+
+#navigator {
+  z-index: 100;
+}
+
+#main {
+  z-index: 10;
+  height: 100vh;
+  transition: all 0.5s ease;
+}
